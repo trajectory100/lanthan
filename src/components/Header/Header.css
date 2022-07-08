@@ -1,0 +1,15 @@
+
+
+.logobox{
+  display: flex;
+  align-items: stretch;
+  background-color: #f1f1f1;
+
+}
+
+.logobox.item1{flex-grow: 1;
+}
+.logobox.item2{flex-grow: 1;
+  margin: 10px;}
+.logobox.item3{flex-grow: 8;
+margin: 10px;}
