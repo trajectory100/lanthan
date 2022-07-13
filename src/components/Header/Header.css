@@ -2,66 +2,42 @@
 
 .logobox{
   display: flex;
-  /* align-items: center; */
+  flex-wrap: wrap;
   background-color: #fff;
-  height: 130px;
+  /* height: 130px; */
 }
 
 .logobox.item1{
+  flex-grow: 2;
+  padding-bottom: 20px;
+  position: absolute;
+
   
 }
+.logobox.item1.log1{
+  margin-left: 10px;
+}
 .item2{
+  flex-grow: 2;
   margin-left: 80px;
 }
 .item3{
-  display: inline-flex;
-  flex-direction:  column ;
-   margin-left: auto;
+  display: flex;
+  flex-grow: 4;
+  flex-direction: column;
+  /* border-style: solid; */
+}
+.item4 {
   align-self: flex-end;
+  padding-right: 3px;
+  padding-top: 5px;
 
 }
-
-.item3  li{
-  list-style-type: none;
-  color: #3f3f3f;
-  margin-top: 4px;
-  margin-right: 3px;
-  padding: 4px 6px;
-  background-color: #f4f4f4;
-  justify-content:  space-between;
-}
-.item3  li:nth-child(2) {
-  max-width: 70%;
-
-}
-.logobox.item4{
-  margin-right: auto;
-
-
+.item5 {
+  align-self: flex-end;
 }
 
-.searchBox {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform:  translate(-50%,50%);
-  background:  #f4f4f4;
-  height: 50px;
-  border-radius: 50px;
-  padding: 10px;
-
-}
-/* .searchBox:hover > .searchInput {
-  width: 250px;
-  padding: 0 6px;
-}
-
-.searchBox:hover > .searchButton {
-background: #fff;
-color : #2f3640;
-} */
 .searchButton {
-
 
   color:#3f3f3f;
   float: right;
@@ -74,4 +50,50 @@ color : #2f3640;
   justify-content: center;
   align-items: right;
   transition: 0.4s;
+}
+/* 
+.searchBox  {
+  /* align-items: right;  position: relative; */
+  /* top: 30%;
+  left: 5%; 
+  transform:  translate(-50%,50%);
+  background:  #f4f4f4;
+  height: 50px;
+  border-radius: 50px;
+  padding: 5px;
+}  */
+.searchBox:hover > .searchInput {
+  width: 250px;
+  padding: 0 6px;
+}
+
+.searchBox:hover > .searchButton {
+background: #fff;
+color : #2f3640;
+}
+.searchInput {
+  border:none;
+  background: none;
+  outline:none;
+  float:left;
+  padding: 0;
+  color: red;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 50px;
+  width: 0px;
+}
+
+
+.item5  li {
+  list-style-type: none;
+  color: #3f3f3f;
+  margin-top: 4px;
+  margin-right: 3px;
+  padding: 4px 6px;
+  background-color: #f4f4f4;
+  justify-content:  space-between;
+}
+.item5 li:nth-child(2) {
+  max-width: 70%;
 }

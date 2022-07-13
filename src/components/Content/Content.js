@@ -6,7 +6,7 @@ const Content = () => {
   return (
           <div className={"Content-container"}>
                     <h1>Content Part</h1>
-                    
+              
           </div>
   );
 }
